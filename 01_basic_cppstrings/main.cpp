@@ -105,7 +105,7 @@ int main(int argc, char **argv)
     // cout << s9 << endl;
     // getline(cin, s9);        //< Read entire line until enter is pressed
     // cout << s9 << endl;
-    getline(cin, s9, 'x');      //< Stops reading when the user presses 'x'
+    getline(cin, s9, 'x'); //< Stops reading when the user presses 'x'
     cout << s9 << endl;
 
     return 0;
