@@ -24,7 +24,7 @@ void print_array(const int arr[], size_t size)
 {
     for (size_t i{0}; i < size; ++i)
     {
-        std::cout << arr[i] << " ";
+        std::cout << arr[i] << " ";             //> Add a space after each value
     }
     std::cout << std::endl;
 }
