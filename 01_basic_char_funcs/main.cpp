@@ -1,7 +1,7 @@
 #include <cctype> //< This header allows testing and converting chars
 #include <iostream>
 
-/* * Some basic character functions of cpp
+/* * Some basic character functions of c++
  *  */
 
 using namespace std;
