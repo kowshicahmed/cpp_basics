@@ -1,3 +1,0 @@
--IC:\Users\kowsh\Documents\cppworkspace\polymorph_purevirtual_func_abstractclass
--target
-
