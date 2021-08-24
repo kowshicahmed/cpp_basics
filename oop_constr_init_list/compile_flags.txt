@@ -1,3 +1,0 @@
--IC:\Users\kowsh\Documents\cppworkspace\oop_constr_init_list
--target
-

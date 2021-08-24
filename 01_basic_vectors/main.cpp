@@ -32,5 +32,7 @@ int main()
     vector_2d.push_back(vector2);
 
     cout << vector_2d.at(0).at(0) << endl;
+    cout << vector_2d.size() << endl;
+    cout << vector_2d.at(0).size() << endl;
     return 0;
 }
