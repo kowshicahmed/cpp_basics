@@ -1,0 +1,3 @@
+-IC:\Users\kowsh\Documents\cppworkspace\ool_mystring_op_methods
+-target
+
