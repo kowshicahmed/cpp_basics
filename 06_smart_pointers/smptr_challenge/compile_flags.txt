@@ -1,0 +1,3 @@
+-IC:\Users\kowsh\Documents\cppworkspace\smptr_challenge
+-target
+
