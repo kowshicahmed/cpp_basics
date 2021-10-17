@@ -1,6 +1,17 @@
 # Prerequisites
 *.d
 
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
 # Compiled Object files
 *.slo
 *.lo
@@ -11,10 +22,22 @@
 *.gch
 *.pch
 
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
 # Fortran module files
 *.mod
@@ -30,6 +53,24 @@
 *.exe
 *.out
 *.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
 
 # Cmake
 CMakeLists.txt.user
@@ -44,8 +85,8 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-# Folders
-Debug
+# Project Folders
+*/Debug
 .vscode/
 
 # Project files
