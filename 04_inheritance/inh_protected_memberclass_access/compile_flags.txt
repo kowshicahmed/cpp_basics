@@ -1,3 +1,0 @@
--IC:\Users\kowsh\Documents\cppworkspace\inh_protected_memberclass_access
--target
-

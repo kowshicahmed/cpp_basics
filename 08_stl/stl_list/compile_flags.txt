@@ -1,3 +1,0 @@
--IC:\Users\kowsh\Documents\cppworkspace\stl_list
--target
-
