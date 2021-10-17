@@ -20,15 +20,15 @@ struct Person
 int main()
 {
     //std::cout << sizeof(Person) << std::endl;   // Without pragma pack, it will show 2 bytes more
-    
     Person someone = {"Frodo", 220, 0.8};
-    
     std::string fileName = "test.bin";
-
+    
+/*************************************** Write binary file**********************************/
     std::ofstream outputFile;
-// it is important to mention here that the filetype is binary
-// binary files do not have something line new lines etc
+    // it is important to mention here that the filetype is binary
+    // binary files do not have something line new lines etc
     outputFile.open(fileName, std::ios::binary);
+
     //outputFile.open(fileName, std::ios::binary|std::ios::out); // if we use fstream insted of ofstream
     if(outputFile.is_open())
     {
@@ -38,11 +38,29 @@ int main()
         outputFile.write(reinterpret_cast<char* > (&someone), sizeof(Person));
         outputFile.close();
     }
-
     else
     {
         std::cout << "Could not create file " + fileName << std::endl;
     }
+
+
+/************************************* Read binary file **********************************/
+    Person someoneElse = {};
+    std::ifstream inputFile;
+    inputFile.open(fileName, std::ios::binary);
+
+    //outputFile.open(fileName, std::ios::binary|std::ios::out); // if we use fstream insted of ofstream
+    if(inputFile.is_open())
+    {
+        inputFile.read(reinterpret_cast<char* > (&someoneElse), sizeof(Person));
+        inputFile.close();
+    }
+    else
+    {
+        std::cout << "Could not create file " + fileName << std::endl;
+    }
+
+    std::cout << someoneElse.name << ", " << someoneElse.age << ", " << someoneElse.height << std::endl;
     
     return 0;
 }
