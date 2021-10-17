@@ -12,7 +12,7 @@ public:
         : name{name}, age{age} {}
     bool operator<(const Person &rhs) const         // priority queue uses this operator to sort
     {
-        return this->age < rhs.age;
+        return this->age < rhs.age;                     // we can also sort by name if we want
     }
     bool operator==(const Person &rhs) const
     {
